@@ -1,0 +1,9 @@
+<h5>Buscar:</h5>
+
+<!-- Añadimons #txtBuscar pra qeu la función coja el valor del input via parametro (keyup.enter)="buscar(txtBuscar.value)"
+Utilizando @ViewChild no necesitamos pasarle este parametro a la funcion-->
+<input type="text" 
+       class="form-control" 
+       placeholder="Buscar gifs..."
+       (keyup.enter)="buscar()"
+       #txtBuscar>
